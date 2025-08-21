@@ -67,7 +67,7 @@ public class GeoLocationSpoofTest {
             geoButton.click();
             System.out.println("Geolocation button clicked. The map should now reflect the set location.");
             System.out.println("Waiting 3 seconds to observe the result...");
-            Thread.sleep(10000);
+            Thread.sleep(3000);
         } catch (InterruptedException ignored) {
             System.out.println("Thread was interrupted.");
         } finally {
