@@ -1,6 +1,6 @@
 # 📍 Selenium CDP Geolocation: Kamalganj(Sylhet Region), Bangladesh
 
-Simulate geolocation in Chrome using CDP with Selenium 4.35.0.  
+Simulate geolocation in Chrome using CDP with Selenium 4.40.0.  
 This project spoofs the browser to think it's in **Kamalganj(Sylhet Region), Bangladesh**.
 
 ---
