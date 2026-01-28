@@ -4,7 +4,7 @@ package com.ahmedhasan;
  * Author: Ahmed Hasan
  * © Ahmed Hasan 2025. All rights reserved.
  *
- * This script uses Chrome DevTools Protocol (CDP) with Selenium 4.34.0
+ * This script uses Chrome DevTools Protocol (CDP) with Selenium 4.40.0
  * to simulate geolocation in the browser — for Kamalganj(Sylhet Region), Bangladesh.
  */
 
@@ -13,7 +13,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.v138.emulation.Emulation;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -21,6 +20,7 @@ import java.time.Duration;
 import java.util.Optional;
 
 public class GeoLocationSpoofTest {
+
     public static void main(String[] args) {
 
         // Set Chrome options to allow geolocation without prompt
@@ -42,7 +42,7 @@ public class GeoLocationSpoofTest {
             System.out.println("Setting geolocation to Kamalganj(Sylhet Region), Bangladesh (lat: " + latitude + ", lon: " + longitude + ")...");
 
             // Override browser geolocation using CDP
-            devTools.send(Emulation.setGeolocationOverride(
+            devTools.send(org.openqa.selenium.devtools.v144.emulation.Emulation.setGeolocationOverride(
                     Optional.of(latitude),
                     Optional.of(longitude),
                     Optional.of(accuracy),
