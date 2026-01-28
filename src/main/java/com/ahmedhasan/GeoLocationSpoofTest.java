@@ -1,5 +1,13 @@
 package com.ahmedhasan;
 
+/*
+ * Author: Ahmed Hasan
+ * © Ahmed Hasan 2025. All rights reserved.
+ *
+ * This script uses Chrome DevTools Protocol (CDP) with Selenium 4.40.0
+ * to simulate geolocation in the browser — for Kamalganj(Sylhet Region), Bangladesh.
+ */
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,13 +21,6 @@ import java.util.Optional;
 
 public class GeoLocationSpoofTest {
 
-    /*
-     * Author: Ahmed Hasan
-     * © Ahmed Hasan 2025. All rights reserved.
-     *
-     * This script uses Chrome DevTools Protocol (CDP) with Selenium 4.40.0
-     * to simulate geolocation in the browser — for Kamalganj(Sylhet Region), Bangladesh.
-     */
 
     public static void main(String[] args) {
 
@@ -66,7 +67,7 @@ public class GeoLocationSpoofTest {
             geoButton.click();
             System.out.println("Geolocation button clicked. The map should now reflect the set location.");
             System.out.println("Waiting 3 seconds to observe the result...");
-            Thread.sleep(3000);
+            Thread.sleep(10000);
         } catch (InterruptedException ignored) {
             System.out.println("Thread was interrupted.");
         } finally {
