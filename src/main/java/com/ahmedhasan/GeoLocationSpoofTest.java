@@ -20,8 +20,7 @@ import java.time.Duration;
 import java.util.Optional;
 
 public class GeoLocationSpoofTest {
-
-
+    
     public static void main(String[] args) {
 
         // Set Chrome options to allow geolocation without prompt
